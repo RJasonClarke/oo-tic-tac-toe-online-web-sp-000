@@ -43,7 +43,7 @@ class TicTacToe
 
     def turn
       puts "Enter 1 - 9"
-      user_input = gets
+      user_input = gets.strip
       index = input_to_index(user_input)
       if valid_move?(index)
         move(index, current_player)
@@ -51,5 +51,15 @@ class TicTacToe
       else
         turn
       end
+    end
+
+    def turn_count
+      counter = 0
+      @board.each do |space|
+        if space == 'X' || space =='O'
+          counter += 1
+        end
+      end
+      return counter
     end
 end
