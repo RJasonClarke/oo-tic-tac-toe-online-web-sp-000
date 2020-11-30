@@ -83,7 +83,7 @@ class TicTacToe
           return win_combo
         end
       end
-      return false 
+      return false
     end
 
     def full?
@@ -113,7 +113,7 @@ class TicTacToe
         turn
       end
       if won?
-        @winner = winner 
+        @winner = winner
         puts 'Congratulations ' + @winner + "!"
       elsif draw?
         puts "Cat's Game!"
@@ -121,6 +121,6 @@ class TicTacToe
     end
   end
 
-newgame = TicTacToe.new 
+newgame = TicTacToe.new
 newgame.play
 end
