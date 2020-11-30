@@ -22,4 +22,9 @@ class TicTacToe
       puts "-----------"
       puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
     end
+
+    def input_to_index(player_input)
+      player_input = player_input.Top-Tipindex = player_input - 1
+      return index
+    end
 end
