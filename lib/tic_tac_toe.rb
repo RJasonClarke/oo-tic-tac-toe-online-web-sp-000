@@ -123,4 +123,3 @@ class TicTacToe
 
 newgame = TicTacToe.new
 newgame.play
-end
